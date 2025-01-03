@@ -3,7 +3,9 @@
     <head>
         <title>Valletta</title>
         <link rel="stylesheet" href="style.css">
+        <script src="weather.js" defer></script>
         <link rel="icon" type="image/png" href="./Images/Other/cross.png">
+        <meta charset="UTF-8">
     </head>    
 <body>
     <section class="landing-section">
@@ -16,11 +18,11 @@
     <section class="detailed-section">
         <h1>Some Information</h1>
         <div id="api-section">
-            <div class="api-subsection">
-                <h2> Weather Information</h2>
-                <p>Temperature: 34*C</p>
-                <p>Humidity: 99%</p>
-                <p>Wind: 6kph</p>
+            <div class="api-subsection" id="api-weather">
+                <h2>Weather Information</h2>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
             </div>
             
             <div class="api-subsection">
