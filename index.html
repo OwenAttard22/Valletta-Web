@@ -4,15 +4,26 @@
         <title>Valletta</title>
         <link rel="stylesheet" href="style.css">
         <script src="weather.js" defer></script>
+        <script src="map.js" defer></script>
         <link rel="icon" type="image/png" href="./Images/Other/cross.png">
         <meta charset="UTF-8">
+
+        <!-- Leaflet CSS and Js -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     </head>    
 <body>
     <section class="landing-section">
-        <h1>Valletta</h1>
+        <section class="navbar-div">
+            <a href="index.html" class="header">
+                <img src="./Images/Other/cross.png" alt="Favicon" class="favicon">
+                <h1>Valletta</h1>
+            </a>
+        </section>
+        
         <h3>The City of Valletta</h3>
         <p>Valletta, locally called 'Il-Belt' is the capital city of the island nation of Malta</p>
-        <a href="#api-section">More about Valletta</a>
+        <a class="landing-button" href="#api-section">More about Valletta</a>
     </section>
 
     <section class="detailed-section">
@@ -25,11 +36,10 @@
                 <p id="wind"></p>
             </div>
             
-            <div class="api-subsection">
+            <div class="api-subsection" id="api-map">
                 <h2>Explore Valletta</h2>
-                <p>Map goes here</p>
+                <div id="map" style="height: 400px; width: 50%"></div>
             </div>
-            
         </div>
     </section>
 </body>
