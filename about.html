@@ -4,6 +4,11 @@
         <title>Valletta - About</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="./Images/Other/cross.png">
+        <script src="about-map.js" defer></script>
+
+        <!-- Leaflet CSS and Js -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     </head>    
 <body>
     <section class="landing-section">
@@ -19,24 +24,28 @@
         <a class="landing-button" href="#about-section">Check us out</a>
     </section>
 
-    <section class="detailed-section">
+    <section class="detailed-section" id="about-section-outer">
         <h1>Some Information</h1>
         <div id="about-section">
             <div id="about-info">
-                <p>Name: Owen Attard</p>
-                <p>Age: 21</p>
-                <p>Nationality: Maltese</p>
-                <p>Hobbies: Sports, Volunteering, Video Games</p>
-                <p>Study: Bachelor of Artificial Intelligence at the University of Malta</p>
+                <h2>About Us</h2>
+                <p>Hello I am Owen, a 21 year old from Malta styding Artificial Intelligence at the University of Malta.
+                    I am in my final year of studies where I am currently writing my dissertation on the application of 
+                    reinforcement learning of air traffic control scenarios in busy airpots. 
+                    I enjoy playing sports, video games and voluteering at a local youth organisation.
+                    In the map below you can see where my hometown is located in comparison to our capital Valletta.</p>
+                <div id="about-button">
+                    <a href="https://github.com/OwenAttard22/Valletta-Web" target="_blank">Github Repo</a>
+                </div>
             </div>
-            <div id="about-photo">
-                <img src="./Images/Other/me.jpg" alt="Photo of Owen Attard">
-            </div>            
-            <div id="about-map">
-                <p>Map with points of valletta and home</p>
-            </div>
-            
         </div>
+        <div id="about-photo">
+            <img src="./Images/Other/me.jpg" alt="Photo of Owen Attard">
+        </div>            
+        <div id="about-map" class="map">
+            <p>Map with points of valletta and home</p>
+        </div>
+            
     </section>
 </body>
 </html>
