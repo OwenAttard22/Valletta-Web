@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const wind = data.wind.speed;
 
             // display format
-            document.getElementById("temperature").innerText = `Temperature: ${temperature}°C`;
-            document.getElementById("humidity").innerText = `Humidity: ${humidity}%`;
-            document.getElementById("wind").innerText = `Wind: ${wind} kph`;
+            document.getElementById("temperature").innerText = `${temperature}°C`;
+            document.getElementById("humidity").innerText = `${humidity}%`;
+            document.getElementById("wind").innerText = `${wind} kph`;
         })
         .catch(error => {
             console.error("Error fetching weather data:", error);
