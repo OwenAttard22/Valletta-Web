@@ -1,9 +1,7 @@
 # Valletta-Web
 
 ## Table of Contents
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Setup Instructions](#setup-instructions)
+- [Structure](#structure)
 - [Features Details](#features-details)
   - [Navigation Bar](#navigation-bar)
   - [Landing Section](#landing-section)
